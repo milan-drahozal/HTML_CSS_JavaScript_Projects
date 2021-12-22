@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/**** reusable ****/
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.heading-main h2{
+    text-align: center;
+    /* margin-top: 20px; */
+    font-size: 30px;
+}
+
+.heading-main h2:after{
+    content: "";
+    display: block;
+    width: 150px;
+    border-bottom: 2px solid #d66814;
+    margin: 20px auto;
+}
+
+.empty-space{
+    height: 50px;
+}
+
+
+/***** Header *****/
+header{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0, 0, 0, 0.7)), url("/img/pizza-syr.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.nav-background{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    z-index: 50;
+    border-bottom: 2px solid #fff;
+}
+
+#logo img{
+    width: 200px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+nav ul{
+    float: right;
+    margin-top: 7px;
+    position: fixed;
+    margin-left: 28%;
+    z-index: 100;
+}
+
+nav ul li{
+    display: inline-block;
+    color: #fff;
+    margin-left: 15px;
+}
+
+nav ul li a:link,
+nav ul li a:visited{
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover,
+nav ul li a:active{
+    transition: border-bottom 0.5s;
+    border-bottom: 2px solid #d66814;
+
+}
+
+
+.header-text{
+    position: absolute;
+    top: 50%;
+    left: 41%;
+    transform: translate(-50%,-50%);
+}
+
+.header-text h1{
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2.2px;
+    word-spacing: 3.5px;
+}
+
+.btn{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    border: 1px solid #d66814;
+    border-radius: 10px;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    margin-top: 1px;
+
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: #d66814;
+}
+
+.btn-full:hover,
+.btn-full:active{
+    transition: background 0.5s;
+    background-color: #a93d00;
+    border: 1px solid #a93d00;
+}
+
+.btn-empty:link,
+.btn-empty:visited{
+    margin-left: 5px;
+    background: transparent;
+}
+
+.btn-empty:hover,
+.btn-empty:active{
+    transition: background 0.5s;
+    background-color: #a93d00;
+    border: 1px solid #a93d00;
+}
+
+/* Mobile navigation */
+.mobile-nav-icon{
+    float: right;
+    margin-top: 5px;
+    display: none;
+}
+
+/***** About us *****/
+
+.pizza-example img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 4px 6px 10px rgb(14, 13, 13);
+}
+
+/***** Our pizza *****/
+
+.pizza-info img{
+    width: 100%;
+    height: 270px;
+    border-radius: 20px;
+    box-shadow: 4px 6px 10px rgb(14, 13, 13);
+}
+
+.text-pizza{
+    margin-bottom: 20px;
+}
+
+.text-pizza div{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    text-align: center;
+    border-radius: 50%;
+    padding: 12px;
+    float:left;
+}
+
+.text-pizza p{
+    margin-left: 60px;
+    font-size: 20px;
+}
+
+/***** Reference *****/
+.reference{
+    background: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0, 0.7)), url("/img/pizza-syr.jpg");
+    background-attachment: fixed;
+    
+
+}
+.reference h2{
+    color: #fff;
+    padding-top: 40px;
+}
+
+.reference h2:after{
+    border-bottom: 2px solid #fff;
+}
+
+.one-reference{
+    color: #fff;
+    font-size: 20px;
+}
+
+.one-reference p{
+    font-style: italic;
+}
+
+.photo-name{
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.photo-name p{
+    padding: 5px;
+    margin-left: 60px;
+    font-style: normal;
+
+}
+
+.photo-name img{
+    width: 50px;
+    border-radius: 50%;
+    float: left;
+}
+
+/***** Foto Galerie *****/
+.photo-segment li {
+    list-style-type: none;
+  /*  background-color: rgb(69, 133, 127);*/
+    overflow: hidden;
+    height: 300px;
+}
+
+.photo-segment img {
+    width: 100%;
+    height: 300px;
+  /*opacity: 0.5; */
+    transform: scale(1.15);
+}
+
+/*.photo-segment img:hover{
+    transition: transform 0.5s, opacity 0.5s;
+    transform: scale(1);
+    opacity: 1;
+}
+*/
+
+/***** Contact form *****/
+
+.contact-form{
+    max-width: 750px;
+    text-align: center;
+}
+
+.contact-form input{
+    width: 80%;
+    margin: 5px 0px;
+    padding: 7px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(88, 77, 77);
+}
+
+.contact-form textarea{
+    width: 80%;
+    margin: 5px 0px;
+    padding: 7px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(88, 77, 77);
+    font-family: Arial;
+}
+
+input[type="submit"]{
+    background-color: #d66814;
+    color: #fff;
+    font-size: 20px;
+}
+
+input[type="submit"]:hover{
+    transition: background 0.5s;
+    background-color: #dd9862;
+    color: #000;
+}
+
+/**** Footer ****/
+
+.footer-page{
+    background: #a93d00;
+    margin-top: 30px;
+    color: #fff;
+}
+
+.social{
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.social p{
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-text{
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.social p a:link,
+.social p a:visited{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+.social p a:hover,
+.social p a:active{
+    color: #000;
+
+}
+
+/**** Stop floating ****/
+.clearfix {zoom: 1}
+.clearfix:after {
+     content: ".";
+     clear: both;
+     display: block;
+     height: 0;
+     visibility: hidden;
+}
